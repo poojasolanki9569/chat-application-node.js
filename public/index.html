@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buddy Chat</title>
+    <!-- <script src="http://localhost:5500/socket.io/socket.io.js"></script> -->
+    <!-- <script src="js/client.js"></script> -->
+    <link rel="stylesheet" type="text/css" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous"> -->
+</head>
+<body>
+    <nav class="mt-3">
+        <img class="icon" src=".\msgIcon.png" alt="Chat Icon Image">
+    </nav>
+    
+
+    <div class="container bg-info chat-area mt-3 overflow-auto border border-3 border-success rounded">
+        <!-- <div class="text-msg text-right text-success mt-2 mb-2 fs-4 w-50 shadow-lg p-2 bg-body rounded">Harry: Hi</div>
+        <div class="text-msg text-left text-success mt-2 mb-2 fs-4 w-50 shadow-lg p-2 bg-body rounded">Chetna: Hey</div> -->
+    </div>
+    <div class="send-msg container mt-3 bg-danger rounded p-2">
+        <form action="#" class="input-group mb-3" id="send-text-form">
+                <input type="text" class="form-control" id="text-input" name="text-input" placeholder="Enter your massege here....">
+                <button class="btn btn-outline-secondary bg-info" type="submit">Send</button>
+        </form>
+    </div>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
+    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.6.0/umd/popper.min.js" integrity="sha512-BmM0/BQlqh02wuK5Gz9yrbe7VyIVwOzD1o40yi1IsTjriX/NGF37NyXHfmFzIlMmoSIBXgqDiG1VNU6kB5dBbA==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
